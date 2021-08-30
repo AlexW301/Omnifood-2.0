@@ -27,6 +27,7 @@ Medium: 1.2
 - Tints: 
 #fdf2e9
 #fae5d3
+#eb984e
 
 - Shades:
 - Accents:
@@ -37,6 +38,8 @@ Medium: 1.2
 
 
 --- 05 SHADOWS
+
+box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 
 --- 06 BORDER RADIUS
 
@@ -84,11 +87,15 @@ body {
     column-gap: 6.4rem;
     row-gap: 9.6rem;
 
-    margin-bottom: 9.6rem;
+    /* margin-bottom: 9.6rem; */
 }
 
-.grid:last-child {
+/* .grid:last-child {
     margin-bottom: 0;
+} */
+
+.grid:not(:last-child) {
+    margin-bottom: 9.6rem;
 }
 
 .grid--2-cols {
